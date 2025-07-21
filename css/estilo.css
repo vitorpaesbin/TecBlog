@@ -1,14 +1,12 @@
 /*limpar formatações padrão*/
-* {
+* { font-size: 1em;
+    font-family: "Trebuchet MS", Helveticfa, sans-serif;
     margin:0;
     padding: 0;
 }
 
 body {
-    font-size: 1em;
-    font-family: "Trebuchet MS", Helveticfa, sans-serif;
-    background: #e6e6e6;
-
+        background: #e6e6e6;
 }
 
 /*
@@ -101,6 +99,11 @@ h1 {
 
 h2{
     color: #f7b600;
+    font-size: 1.5em;
+}
+
+h2.continuação {
+    padding-left: 38px;
 }
 
 h3{
@@ -113,12 +116,22 @@ h3{
     color: white;
 }
 
-.data-postagem {
-    font-size: 0.8em;
-    border-bottom: 1px solid #f4f4f4;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    display: block;
-    
+.titulo {
+    display: flex;
+    }
+
+    .titulo h2 {
+        width: 505px;
+    }
+
+.expandir {
+    border: 0;
+    background-color: transparent;
+    color: #f7b600;
 }
 
+.expandir:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
